@@ -1,0 +1,49 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.container_new_edit{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section_01{
+    min-height:500px;
+    padding: 50px 0;
+    // width: 100%;
+    .box_main_slide{
+        .box_content_slide{
+            position: relative;
+            .box_slogan{
+                position: absolute;
+                .slogan_1{
+                    @include font_size(45);
+                    font-weight: 300;
+                    color: #000;
+                    margin-bottom: 14px;
+                    margin-left: 87px;
+                }
+                .slogan_2{
+                    @include font_size(52);
+                    font-weight: bold;
+                    color: #000;
+                    margin-bottom: 14px;
+                }
+                .slogan_3{
+                    @include font_size(52);
+                    font-weight: 300;
+                    color: #000;
+                    margin-bottom: 14px;
+                    .sp_slogan_1{
+                        font-weight: 500;
+                    }
+                    .sp_slogan_2{
+                        font-weight:500;
+                        color: rgba(135, 32, 100, 0.75);;
+                    }
+                }
+            }
+        }
+    }
+}

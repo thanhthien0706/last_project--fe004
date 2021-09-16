@@ -1,0 +1,38 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.container_new_edit{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section_01{
+    min-height:500px;
+    padding: 50px 0;
+    // width: 100%;
+    .box_main_slide{
+        .box_content_slide{
+            .box_slogan{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .slogan_1{
+                    @include font_size(45);
+                    font-weight: 300;
+                    color: #000;
+                    margin-bottom: 14px;
+                    text-align: end ;
+                }
+                .slogan_2{
+                    @include font_size(52);
+                    font-weight: bold;
+                    color: #000;
+                    margin-bottom: 14px;
+                }
+            }
+        }
+    }
+}

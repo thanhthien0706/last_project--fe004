@@ -1,0 +1,176 @@
+// =====================================================================
+// COLOR
+// =====================================================================
+
+$col1: #f89612;
+
+// =====================================================================
+// KEYFRAME
+// =====================================================================
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.container_big {
+    width: 100%;
+    max-width: 1600px;
+    max-width: 1366px;
+    margin: 0 auto;
+    @include tran_slow_03();
+
+    @include maxWidth(1600px) {
+        max-width: 1360px;
+    }
+
+    @include maxWidth(1366px) {
+        max-width: 1200px;
+    }
+
+    @include maxWidth(1200px) {
+        max-width: 1170px;
+        max-width: 95%;
+
+    }
+}
+
+.wrapper {
+    position: relative;
+}
+
+.box_bcrum {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    ul {
+        &::after {
+            @include clear_fix();
+        }
+
+        li {
+            margin-right: 10px;
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            display: inline;
+            line-height: 1.3;
+
+
+            &.home {
+                a {
+                    &::before {
+                        position: relative;
+                        bottom: 0;
+                        content: '';
+                        height: 14px;
+                        width: 14px;
+                        display: inline-flex;
+                        background-image: url('../images/icon/home.png');
+                        background-color: transparent;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                text-decoration: none;
+                outline: none;
+                position: relative;
+
+                &::before {
+                    position: relative;
+                    bottom: 2px;
+                    margin-right: 5px;
+                    content: '';
+                    height: 4px;
+                    width: 4px;
+                    display: inline-flex;
+                    @include borderRadius(50%);
+                    background-color: $col1;
+                }
+            }
+
+            .txt_crumb {
+                font-size: 14px;
+                font-weight: normal;
+                color: #000;
+
+                &::before {
+                    position: relative;
+                    bottom: 2px;
+                    margin-right: 5px;
+                    content: '';
+                    height: 4px;
+                    width: 4px;
+                    display: inline-flex;
+                    @include borderRadius(50%);
+                    background-color: $col1;
+                }
+            }
+        }
+    }
+}
+
+.main_footer {
+    position: relative;
+
+    .go_top {
+        cursor: pointer;
+        position: absolute;
+        right: 3%;
+        top: -100px;
+        height: 80px;
+        width: 80px;
+        background-image: url('../images/icon/gotop.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 991;
+        @include tran_slow_03();
+
+        @include maxWidth(1024px) {
+            right: 5px;
+            height: 60px;
+            width: 60px;
+        }
+
+        @include maxWidth(480px) {
+            top: -40px;
+            height: 40px;
+            width: 40px;
+        }
+    }
+}
+
+
+.row_tour {
+    display: flex;
+    flex-direction: row;
+    margin-left: -15px;
+    margin-right: -15px;
+    @include tran_slow_03();
+
+    @include maxWidth(480px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .item_row {
+        padding-right: 15px;
+        padding-left: 15px;
+        @include tran_slow_03();
+
+        @include maxWidth(480px) {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
