@@ -10,4 +10,20 @@ $(document).ready(function () {
     arrows: false,
     autoplay: true
   });
+  $('.show_menu').click(function () {
+    $('.menu_respontive_ovelay').css({
+      'right': 0
+    });
+    $('.menu_respontive').css({
+      'right': 0
+    });
+  });
+  $('.menu_respontive_ovelay').click(function () {
+    $(this).css({
+      'right': 'unset'
+    });
+    $('.menu_respontive').css({
+      'right': '-100%'
+    });
+  });
 });

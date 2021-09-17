@@ -62,7 +62,12 @@
   <div class="container_edit">
     <div class="box_main_content">
       <div class="box_logo">
-        <img src="../../images/logo.svg" alt="logo" class="img_logo">
+        <img src="images/logo.svg" alt="logo" class="img_logo">
+      </div>
+      <div class="show_menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
       <div class="box_main_menu">
         <ul class="lista_menu">
@@ -83,8 +88,28 @@
       </div>
     </div>
   </div>
-  
 </header>
+
+<div class="menu_respontive_ovelay"></div>
+<section class="menu_respontive">
+  <ul class="main_menu">
+    <li class="menu_list_item active">
+      <a href="/" class="menu_list_item--link">Trang chủ</a>
+    </li>
+    <li class="menu_list_item">
+      <a href="/" class="menu_list_item--link">Tuyến</a>
+    </li>
+    <li class="menu_list_item">
+      <a href="/" class="menu_list_item--link">Liên hệ</a>
+    </li>
+  </ul>
+  <div class="box_btn">
+    <a href="#" class="btn_dat_xe">
+      <img src="images/icon/ic_car-1.svg" alt="">
+      <span class="text">Đặt xe</span>
+    </a>
+  </div>
+</section>
 
   <section>
 
@@ -181,6 +206,7 @@
         </div>
       </div>
     </section>
+
     <section class="section_02">
       <div class="container_new_edit">
         <div class="row_edit">
@@ -221,6 +247,7 @@
         </div>
       </div>
     </section>
+
     <section class="section_03">
       <div class="container_new_edit">
         <div class="box_header">
@@ -291,9 +318,270 @@
       </div>
     </section>
 
+    <section class="section_04">
+      <div class="container_new_edit">
+        <div class="box_row">
+          <div class="col_box col-left">
+            <div class="box_content">
+              <div class="box_header">
+                <span>ĐẶT XE ONLINE</span>
+                <h2>HÂN HẠNH PHỤC VỤ QUÝ KHÁCH</h2>
+              </div>
+              <div class="box_form">
+                <form action="#" class="form">
+                  <div class="box_input khoan_cach_duoi">
+                    <label for="#" class="lb_form">Họ tên</label>
+                    <input type="text" placeholder="Nhập họ tên đầy đủ của bạn..." class="input_form">
+                  </div>
+
+                  <div class="box_grid khoan_cach_duoi">
+                    <div class="item_grid">
+                      <div class="box_input">
+                        <label for="#" class="lb_form">Số điện thoại</label>
+                        <input type="text" placeholder="0905.999.000" class="input_form">
+                      </div>
+                    </div>
+                    <div class="item_grid">
+                      <div class="box_input">
+                        <label for="#" class="lb_form">Email</label>
+                        <input type="text" placeholder="email@email.com" class="input_form">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="box_grid khoan_cach_duoi">
+                    <div class="item_grid">
+                      <div class="box_input">
+                        <label for="#" class="lb_form">Đón bạn ở ?</label>
+                        <input type="text" placeholder="54 Phan Chu Trinh - Hội An" class="input_form">
+                      </div>
+                    </div>
+                    <div class="item_grid">
+                      <div class="box_input">
+                        <label for="#" class="lb_form">Nơi bạn đến</label>
+                        <input type="text" placeholder="03 Hải Châu - Đà Nẵng" class="input_form">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="box_grid khoan_cach_duoi">
+                    <div class="item_grid">
+                      <div class="box_input">
+                        <label for="#" class="lb_form">Ngày đón</label>
+                        <input type="text" placeholder="03/03/2021" class="input_form">
+                      </div>
+                    </div>
+                    <div class="item_grid">
+                      <div class="box_input">
+                        <label for="#" class="lb_form">Giờ đón</label>
+                        <div class="box_sec">
+                          <span class="arrow">
+                            <img src="images/icon/ic_arrow--down.png" alt="">
+                          </span>
+                          <select name="" id="" class="sec_gio_don">
+                            <option value="">--Chọn giờ đón bạn --</option>
+                            <option value="">1 giờ sáng</option>
+                            <option value="">2 giờ chiều</option>
+                            <option value="">3 giờ khuya</option>
+                            <option value="">10 giờ tối</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="box_chon khoan_cach_duoi">
+                    <div class="box_input khoan_cach_duoi">
+                      <label for="#" class="lb_form">Chọn loại xe</label>
+                      <div class="box_radio">
+                        <div class="item_radio">
+                          <input id="loai_4_cho" type="radio" name="loai_xe" class="radio">
+                          <label for="loai_4_cho" class="lb_radio"> 4 Chỗ </label>
+                        </div>
+                        <div class="item_radio">
+                          <input id="loai_7_cho" type="radio" name="loai_xe" class="radio">
+                          <label for="loai_7_cho" class="lb_radio"> 7 Chỗ </label>
+                        </div>
+                        <div class="item_radio">
+                          <input id="loai_16_cho" type="radio" name="loai_xe" class="radio">
+                          <label for="loai_16_cho" class="lb_radio"> 16 Chỗ </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="box_input khoan_cach_duoi">
+                      <label for="#" class="lb_form">Chiều đi</label>
+                      <div class="box_radio box_radio_edit">
+                        <div class="item_radio">
+                          <input id="mot_chieu" type="radio" name="loai_xe" class="radio">
+                          <label for="mot_chieu" class="lb_radio"> 1 chiều </label>
+                        </div>
+                        <div class="item_radio">
+                          <input id="khu_hoi" type="radio" name="loai_xe" class="radio">
+                          <label for="khu_hoi" class="lb_radio"> Khứ hồi </label>
+                        </div>
+                        <!-- <div class="item_radio">
+                        </div> -->
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="box_input_submit">
+                    <input type="submit" class="btn_submit" value="ĐẶT XE">
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col_box col-right">
+            <div class="box_content">
+              <div class="box_header">
+                <p>Đặt xe nhanh qua HOTLINE</p>
+                <h2>0869 90 60 70</h2>
+              </div>
+              <div class="box_img">
+                <img src="images/icon/ic_schedule.svg" alt="">
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_05">
+      <div class="container_new_edit">
+        <div class="box_header">
+          <span>BLOG</span>
+          <h2>Chia sẽ thông tin hữu ích cho hành khách</h2>
+        </div>
+        <div class="box_paper">
+          <div class="box_grid">
+            <div class="item_grid">
+              <a href="#" class="link_paper">
+                <div class="box_content">
+                  <div class="box_img">
+                    <img src="images/bg/bg_Rectangle.png" alt="">
+                  </div>
+                  <div class="box_text_content">
+                    <h2>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet...</h2>
+                    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="item_grid">
+              <a href="#" class="link_paper">
+                <div class="box_content">
+                  <div class="box_img">
+                    <img src="images/bg/bg_Rectangle-2.png" alt="">
+                  </div>
+                  <div class="box_text_content">
+                    <h2>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h2>
+                    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="item_grid">
+              <a href="#" class="link_paper">
+                <div class="box_content">
+                  <div class="box_img">
+                    <img src="images/bg/bg_Rectangle-3.png" alt="">
+                  </div>
+                  <div class="box_text_content">
+                    <h2>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h2>
+                    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="section_06">
+      <div class="container_new_edit">
+        <div class="box_contact">
+          <div class="box_icon">
+            <div class="shape_1"></div>
+            <div class="shape_2"></div>
+            <p class="icon">ALO</p>
+          </div>
+          <div class="box_text">
+            <p>HOTLINE</p>
+            <p class="sdt">
+              0869 90 60 70
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </section>
-  <footer class="main_footer">
-        <h1>This is Footer</h1>
+  <footer class="box_main_footer">
+        <div class="main_footer">
+                <div class="container_new_edit">
+                        <div class="box_grid">
+                                <div class="item_grid">
+                                        <div class="box_content">
+                                                <div class="box_logo">
+                                                        <img src="images/logo.svg" alt="">
+                                                </div>
+                                                <div class="box_text">
+                                                        <p>
+                                                                <img src="images/icon/Frame.png" alt="">
+                                                                <span>65 Triệu Quốc Đạt - Hòa Thọ Đông - Cẩm Lệ - Đà Nẵng</span>
+                                                        </p>
+                                                        <p>
+                                                                <img src="images/icon/phone.png" alt="">
+                                                                <span>0869 90 60 70</span>
+                                                        </p>
+                                                        <p>
+                                                                <img src="images/icon/thu.png" alt="">
+                                                                <span>datxe@dixenha.vn</span>
+                                                        </p>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="item_grid">
+                                        <div class="box_content_footer">
+                                                <h2>GIỚI THIỆU</h2>
+                                                <p><a href="#">Về chúng tôi</a></p>
+                                                <p><a href="#">Dịch vụ ưu đãi</a></p>
+                                                <p><a href="#">Thông tin hãng xe</a></p>
+                                                <p><a href="#">Đội ngũ  tài xế</a></p>
+                                        </div>
+                                </div>
+                                <div class="item_grid">
+                                        <div class="box_content_footer">
+                                                <h2>CHÍNH SÁCH</h2>
+                                                <p><a href="#">Quyền riêng tư</a></p>
+                                                <p><a href="#">Sử dụng dịch vụ</a></p>
+                                                <p><a href="#">Góp ý - khiếu nại</a></p>
+                                                <p><a href="#">Nội dung trang web</a></p>
+                                        </div>
+                                </div>
+                                <div class="item_grid">
+                                        <div class="box_content_footer">
+                                                <h2>HỖ TRỢ</h2>
+                                                <p><a href="#">Đặt xe Online</a></p>
+                                                <p><a href="#">Bảng giá xe</a></p>
+                                                <p><a href="#">Cẩm nang đi lại</a></p>
+                                                <p><a href="#">Văn phòng đại diện</a></p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <div class="box_last">
+                <p class="text_1">© Copyright  2021 | Đi Xe Nhà</p>
+                <p class="tacgia">Website được phát triển bởi <span>NGOCDUY</span></p>
+        </div>
 </footer>
 
   <!-- include scripts.html -->
@@ -309,7 +597,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
 <!-- build:js script/script.min.js -->
 <script type="text/javascript" src="js/slick.js"></script>
